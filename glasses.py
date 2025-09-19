@@ -50,8 +50,8 @@ def create_sidebar(glasses_images, current_glasses, frame_height):
     return sidebar
 
 def main():
-    glasses_base_dir = r"C:\Users\plmala\OneDrive - Coloplast A S\Desktop\Python\Glasses_ComputerVision"
-    face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
+    glasses_base_dir = r"C:\Users\bondinimal\OneDrive - Medicover Sp. z o.o\Other\glasses"
+    face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
     cap = cv2.VideoCapture(0)
     glasses_images = [
         load_glasses_image(os.path.join(glasses_base_dir, "glasses1.png")),
